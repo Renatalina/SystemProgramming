@@ -1,0 +1,119 @@
+ProcessStartInfo - класс
+
+Задает набор значений, используемых при запуске процесса.
+
+Иерархия наследования
+System.Object 
+  System.Diagnostics.ProcessStartInfo
+  
+Пространство имен:  System.Diagnostics
+Сборки:   System.Diagnostics.Process (в System.Diagnostics.Process.dll)
+  System (в System.dll)
+
+ Синтаксис
+public sealed class ProcessStartInfo
+Тип ProcessStartInfo предоставляет следующие члены.
+
+Конструкторы
+ ProcessStartInfo()	Инициализирует новый экземпляр класса ProcessStartInfo, не указывая имени файла, вместе с которым должен запускаться процесс.
+ ProcessStartInfo(String)	Инициализирует новый экземпляр класса ProcessStartInfo и задает имя файла, например приложение или документ, вместе с которым должен запускаться процесс.
+ ProcessStartInfo(String, String)	Инициализирует новый экземпляр класса ProcessStartInfo, задает имя файла приложения, вместе с которым должен запускаться процесс, и указывает передаваемые в приложение аргументы командной строки.
+ 
+Свойства
+ Arguments	Получает или задает набор аргументов командной строки, используемых при запуске приложения.
+ CreateNoWindow	Получает или задает значение, позволяющее определить, нужно ли запускать процесс в новом окне.
+ Domain	Получает или задает значение, позволяющее идентифицировать домен, используемый при запуске процесса.
+ Environment	
+ EnvironmentVariables	Получает пути поиска файлов, каталоги временных файлов, параметры данного приложения и другие аналогичные сведения.
+ ErrorDialog	Получает или задает значение, позволяющее определить, будет ли отображаться диалоговое окно сообщения об ошибке в случае невозможности запуска процесса.
+ ErrorDialogParentHandle	Получает или задает дескриптор окна, используемый при отображении диалогового окна сообщения об ошибке в случае невозможности запустить процесс.
+ FileName	Получает или задает приложение или документ для запуска.
+ LoadUserProfile	Получает или задает значение, позволяющее определить, следует ли загружать профиль пользователя Windows из реестра.
+ Password	Получает или задает параметр безопасности, в котором содержится пароль пользователя, используемый при запуске процесса.
+ RedirectStandardError	Получает или задает значение, позволяющее определить, записываются ли выходные данные об ошибках приложения в поток Process.StandardError.
+ RedirectStandardInput	Получает или задает значение, позволяющее определить, будут ли считываться входные данные приложения из потока Process.StandardInput.
+ RedirectStandardOutput	Получает или задает значение, позволяющее определить, записываются ли текстовые выходные данные приложения в поток Process.StandardOutput.
+ StandardErrorEncoding	Получает или задает предпочтительную кодировку для вывода ошибок.
+ StandardOutputEncoding	Получает или задает предпочтительную кодировку для стандартного вывода.
+ UserName	Получает или задает имя пользователя, которое следует использовать при запуске процесса.
+ UseShellExecute	Получает или задает значение, позволяющее определить, нужно ли использовать оболочку операционной системы для запуска процесса.
+ Verb	Получает или задает команду, которую необходимо использовать при открытии приложения или документа, указанного в свойстве FileName.
+ Verbs	Получает набор команд, которые связаны с типом файла, заданным в свойстве FileName.
+ WindowStyle	Получает или задает состояние окна, используемое при запуске процесса.
+ WorkingDirectory	Если свойство UseShellExecute имеет значение false, возвращает или задает рабочую папку для запускаемого процесса. Если параметру UseShellExecute присвоено значение true, возвращает или задает каталог, содержащий процесс, который требуется запустить.
+ 
+Методы
+ Equals(Object)	Определяет, равен ли заданный объект текущему объекту. (Унаследовано от Object.)
+ GetHashCode	Играет роль хэш-функции для определённого типа.(Унаследовано от Object.)
+ GetType	Возвращает объект класса Type для текущего экземпляра. (Унаследовано от Object.)
+ ToString	Возвращает строковое представление текущего объекта.(Унаследовано от Object.)
+ 
+Заметки
+ProcessStartInfo используется совместно с компонентом Process. При запуске процесса с помощью Process класс, доступны для обработки сведений, доступных при присоединении к выполняющемуся процессу.
+Можно использовать ProcessStartInfo класса для лучшего контроля над началом процесса. Необходимо задать по крайней мере FileName Свойства, либо вручную или с помощью конструктора. Имя файла — любому приложению или документу. Здесь документ определяется как файл любого типа, который имеет открытый или по умолчанию действие, связанное с ним. Можно просмотреть зарегистрированные типы файлов и связанные с ними приложения для компьютера с помощью Свойства папки диалоговое, доступный через операционную систему. Дополнительно кнопки приводит к диалоговым окном, которое показывает, является ли откройте действие, связанное с определенным зарегистрированным типом файла.
+Кроме того можно задать другие свойства, которые определяют действия, выполняемые с этим файлом. Можно указать значение для типа FileName свойство для Verb Свойства. Например можно указать «печать» для типа документа. Кроме того, можно указать Arguments значения свойств, чтобы быть аргументы командной строки для передачи процедуры открытия файла. Например, если задать приложение текстового редактора в FileName Свойства, можно использовать Arguments для указания текстового файла, который открыт в редакторе.
+Стандартный ввод обычно клавиатуры и стандартного вывода и стандартных ошибок обычно являются экран монитора. Тем не менее, можно использовать RedirectStandardInput, RedirectStandardOutput, и RedirectStandardError Свойства, чтобы процесс получения входных данных из или возвращать выходные данные в файл или другое устройство. При использовании StandardInput, StandardOutput, или StandardError Свойства Process компонента, необходимо сначала задать соответствующее значение в ProcessStartInfo свойство. В противном случае система вызывает исключение при чтении или записи в поток.
+Задайте UseShellExecute Укажите, следует ли начать процесс с помощью оболочки операционной системы.
+Можно изменить значение любого ProcessStartInfo свойство до момента запуска процесса. После запуска процесса изменение этих значений не имеет эффекта.
+
+Примечание
+Этот класс содержит требование к связыванию на уровне классов, относящееся ко всем элементам. Объект SecurityException возникает, если непосредственный вызывающий объект не имеет разрешения полного доверия. Дополнительные сведения о требованиях безопасности см. в разделе Требования связывания.
+
+Примеры
+В следующем примере кода демонстрируется использование ProcessStartInfo для запуска Internet Explorer, указав URL-адресам, как ProcessStartInfo аргументы.
+
+using System;
+using System.Diagnostics;
+using System.ComponentModel;
+
+namespace MyProcessSample
+{
+    class MyProcess
+    {
+        // Opens the Internet Explorer application.
+        void OpenApplication(string myFavoritesPath)
+        {
+            // Start Internet Explorer. Defaults to the home page.
+            Process.Start("IExplore.exe");
+
+            // Display the contents of the favorites folder in the browser.
+            Process.Start(myFavoritesPath);
+        }
+
+        // Opens urls and .html documents using Internet Explorer.
+        void OpenWithArguments()
+        {
+            // url's are not considered documents. They can only be opened by passing them as arguments.
+            Process.Start("IExplore.exe", "www.northwindtraders.com");
+
+            // Start a Web page using a browser associated with .html and .asp files.
+            Process.Start("IExplore.exe", "C:\\myPath\\myFile.htm");
+            Process.Start("IExplore.exe", "C:\\myPath\\myFile.asp");
+        }
+
+        // Uses the ProcessStartInfo class to start new processes, both in a minimized mode.
+        void OpenWithStartInfo()
+        {
+            ProcessStartInfo startInfo = new ProcessStartInfo("IExplore.exe");
+            startInfo.WindowStyle = ProcessWindowStyle.Minimized;
+
+            Process.Start(startInfo);
+
+            startInfo.Arguments = "www.northwindtraders.com";
+
+            Process.Start(startInfo);
+        }
+
+        static void Main()
+        {
+            // Get the path that stores favorite links.
+            string myFavoritesPath = Environment.GetFolderPath(Environment.SpecialFolder.Favorites);
+
+            MyProcess myProcess = new MyProcess();
+
+            myProcess.OpenApplication(myFavoritesPath);
+            myProcess.OpenWithArguments();
+            myProcess.OpenWithStartInfo();
+        }
+    }
+}

@@ -1,0 +1,7 @@
+c:\users\висковатых.наталия\source\repos\ConsoleThread\ConsoleThread\bin\Debug\ConsoleThread.exe.config
+c:\users\висковатых.наталия\source\repos\ConsoleThread\ConsoleThread\bin\Debug\ConsoleThread.exe
+c:\users\висковатых.наталия\source\repos\ConsoleThread\ConsoleThread\bin\Debug\ConsoleThread.pdb
+c:\users\висковатых.наталия\source\repos\ConsoleThread\ConsoleThread\obj\Debug\ConsoleThread.csprojResolveAssemblyReference.cache
+c:\users\висковатых.наталия\source\repos\ConsoleThread\ConsoleThread\obj\Debug\ConsoleThread.csproj.CoreCompileInputs.cache
+c:\users\висковатых.наталия\source\repos\ConsoleThread\ConsoleThread\obj\Debug\ConsoleThread.exe
+c:\users\висковатых.наталия\source\repos\ConsoleThread\ConsoleThread\obj\Debug\ConsoleThread.pdb

@@ -1,0 +1,10 @@
+C:\Users\Висковатых.Наталия\source\repos\SistemProgramming\SistemProgramming\bin\Debug\SistemProgramming.exe.config
+C:\Users\Висковатых.Наталия\source\repos\SistemProgramming\SistemProgramming\bin\Debug\SistemProgramming.exe
+C:\Users\Висковатых.Наталия\source\repos\SistemProgramming\SistemProgramming\bin\Debug\SistemProgramming.pdb
+C:\Users\Висковатых.Наталия\source\repos\SistemProgramming\SistemProgramming\obj\Debug\SistemProgramming.csprojResolveAssemblyReference.cache
+C:\Users\Висковатых.Наталия\source\repos\SistemProgramming\SistemProgramming\obj\Debug\SistemProgramming.csproj.CoreCompileInputs.cache
+C:\Users\Висковатых.Наталия\source\repos\SistemProgramming\SistemProgramming\obj\Debug\SistemProgramming.exe
+C:\Users\Висковатых.Наталия\source\repos\SistemProgramming\SistemProgramming\obj\Debug\SistemProgramming.pdb
+C:\Users\Висковатых.Наталия\source\repos\SistemProgramming\SistemProgramming\bin\Debug\StudentLibrary.dll
+C:\Users\Висковатых.Наталия\source\repos\SistemProgramming\SistemProgramming\bin\Debug\StudentLibrary.pdb
+C:\Users\Висковатых.Наталия\source\repos\SistemProgramming\SistemProgramming\obj\Debug\SistemProgramming.csproj.CopyComplete

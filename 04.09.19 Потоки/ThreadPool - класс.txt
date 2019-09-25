@@ -1,0 +1,20 @@
+Методы
+	BindHandle(IntPtr)	Устаревшее. Связывает дескриптор операционной системы с объектом ThreadPool.
+	BindHandle(SafeHandle)	Связывает дескриптор операционной системы с объектом ThreadPool.
+	GetAvailableThreads	Возвращает разницу между максимальным числом потоков пула, возвращаемым методом GetMaxThreads, и количеством активных в данный момент потоков.
+	GetMaxThreads	Возвращает количество запросов к пулу потоков, которые могут быть активными одновременно.Все запросы, превышающие это количество, остаются в очереди до тех пор, пока потоки пула не станут доступными.
+	GetMinThreads	Возвращает количество свободных потоков, поддерживаемых пулом потоков для обработки новых запросов.
+	QueueUserWorkItem(WaitCallback)	Помещает метод в очередь на выполнение.Метод выполняется, когда становится доступным поток из пула потоков.
+	QueueUserWorkItem(WaitCallback, Object)	Помещает метод в очередь на выполнение, и указывает объект, содержащий данные для использования методом.Метод выполняется, когда становится доступным поток из пула потоков.
+	RegisterWaitForSingleObject(WaitHandle, WaitOrTimerCallback, Object, Int32, Boolean)	Регистрирует делегат для ожидания объекта WaitHandle, указывая 32-разрядное целое число со знаком для тайм-аута в миллисекундах.
+	RegisterWaitForSingleObject(WaitHandle, WaitOrTimerCallback, Object, Int64, Boolean)	Регистрирует делегат для ожидания объекта WaitHandle, указывая 64-разрядное знаковое целое число для времени ожидания в миллисекундах.
+	RegisterWaitForSingleObject(WaitHandle, WaitOrTimerCallback, Object, TimeSpan, Boolean)	Регистрирует делегат для ожидания объекта WaitHandle, указывая значение TimeSpan для задания тайм-аута.
+	RegisterWaitForSingleObject(WaitHandle, WaitOrTimerCallback, Object, UInt32, Boolean)	Регистрирует делегат для ожидания объекта WaitHandle, указывая 32-разрядное целое число без знака для тайм-аута в миллисекундах.
+	SetMaxThreads	Устанавливает количество запросов к пулу потоков, которые могут быть активными одновременно.Все запросы, превышающие это количество, остаются в очереди до тех пор, пока потоки пула не станут доступными.
+	SetMinThreads	Устанавливает количество свободных потоков, поддерживаемых пулом потоков для обработки новых запросов.
+	UnsafeQueueNativeOverlapped	Помещает в очередь на выполнение операцию перекрывающегося ввода/вывода.
+	UnsafeQueueUserWorkItem	Помещает заданный делегат в очередь пула потоков, но не распространяет вызывающий стек на рабочий поток.
+	UnsafeRegisterWaitForSingleObject(WaitHandle, WaitOrTimerCallback, Object, Int32, Boolean)	Регистрирует делегат для ожидания объекта WaitHandle, указывая 32-разрядное целое число со знаком для тайм-аута в миллисекундах.Не распространяет вызывающий стек на рабочий поток.
+	UnsafeRegisterWaitForSingleObject(WaitHandle, WaitOrTimerCallback, Object, Int64, Boolean)	Регистрирует делегат для ожидания объекта WaitHandle, задавая 64-разрядное целое число со знаком для обозначения времени ожидания в миллисекундах.Не распространяет вызывающий стек на рабочий поток.
+	UnsafeRegisterWaitForSingleObject(WaitHandle, WaitOrTimerCallback, Object, TimeSpan, Boolean)	Регистрирует делегат для ожидания объекта WaitHandle, указывая значение TimeSpan для задания тайм-аута.Не распространяет вызывающий стек на рабочий поток.
+	UnsafeRegisterWaitForSingleObject(WaitHandle, WaitOrTimerCallback, Object, UInt32, Boolean)	Регистрирует делегат для ожидания объекта WaitHandle, указывая 32-разрядное целое число без знака для тайм-аута в миллисекундах.Не распространяет вызывающий стек на рабочий поток.

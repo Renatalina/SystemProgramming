@@ -1,0 +1,6 @@
+LIBRARY "SimpleDll"
+EXPORTS
+add
+sub
+mult
+div

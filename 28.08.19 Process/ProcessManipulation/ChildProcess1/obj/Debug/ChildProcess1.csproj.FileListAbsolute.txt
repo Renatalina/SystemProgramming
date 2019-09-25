@@ -1,0 +1,10 @@
+C:\Users\Задерей.Юрий\source\repos\ProcessManipulation\ChildProcess1\bin\Debug\ChildProcess1.exe.config
+C:\Users\Задерей.Юрий\source\repos\ProcessManipulation\ChildProcess1\bin\Debug\ChildProcess1.exe
+C:\Users\Задерей.Юрий\source\repos\ProcessManipulation\ChildProcess1\bin\Debug\ChildProcess1.pdb
+C:\Users\Задерей.Юрий\source\repos\ProcessManipulation\ChildProcess1\obj\Debug\ChildProcess1.csprojResolveAssemblyReference.cache
+C:\Users\Задерей.Юрий\source\repos\ProcessManipulation\ChildProcess1\obj\Debug\ChildProcess1.Form1.resources
+C:\Users\Задерей.Юрий\source\repos\ProcessManipulation\ChildProcess1\obj\Debug\ChildProcess1.Properties.Resources.resources
+C:\Users\Задерей.Юрий\source\repos\ProcessManipulation\ChildProcess1\obj\Debug\ChildProcess1.csproj.GenerateResource.cache
+C:\Users\Задерей.Юрий\source\repos\ProcessManipulation\ChildProcess1\obj\Debug\ChildProcess1.csproj.CoreCompileInputs.cache
+C:\Users\Задерей.Юрий\source\repos\ProcessManipulation\ChildProcess1\obj\Debug\ChildProcess1.exe
+C:\Users\Задерей.Юрий\source\repos\ProcessManipulation\ChildProcess1\obj\Debug\ChildProcess1.pdb

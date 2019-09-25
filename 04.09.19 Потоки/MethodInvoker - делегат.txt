@@ -1,0 +1,39 @@
+MethodInvoker - делегат 
+
+ѕредставл€ет делегат, который может выполнить любой метод в управл€емом коде, объ€вл€етс€ как void и не принимает параметров.
+ѕространство имен:   System.Windows.Forms
+—борка:  System.Windows.Forms (в System.Windows.Forms.dll)
+
+—интаксис
+public delegate void MethodInvoker()
+
+ омментарии
+
+MethodInvoker предоставл€ет простого делегата, который используетс€ дл€ вызова метода с пустым списком параметров. Ётот делегат можно использовать, когда вызовы к элементу управлени€ Invoke метод, или когда требуетс€ простой делегат, но определ€ть его не требуетс€.
+ѕримеры
+
+¬ следующем примере кода демонстрируетс€ использование MethodInvoker дл€ вызова метода, который обновл€ет строку заголовка формы приложени€.
+
+public partial class Form1 : Form
+{
+    public Form1()
+    {
+        // Create a timer that will call the ShowTime method every second.
+        var timer = new System.Threading.Timer(ShowTime, null, 0, 1000);           
+    }
+
+    private void ShowTime(object x)
+    {
+        // Don't do anything if the form's handle hasn't been created 
+        // or the form has been disposed.
+        if (!this.IsHandleCreated && !this.IsDisposed) return;
+
+        // Invoke an anonymous method on the thread of the form.
+        this.Invoke((MethodInvoker) delegate
+        {
+            // Show the current time in the form's title bar.
+            this.Text = DateTime.Now.ToLongTimeString();
+        });
+    }
+}
+

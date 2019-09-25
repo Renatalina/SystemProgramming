@@ -1,0 +1,104 @@
+Activator.CreateInstance - метод (Type)
+ 
+Создает экземпляр указанного типа, используя конструктор, заданный для этого типа по умолчанию.
+Пространство имен:   System
+Сборка:  mscorlib (в mscorlib.dll)
+
+Синтаксис
+C#C++F#VB
+public static object CreateInstance(
+	Type type
+)
+
+Параметры
+type	Тип создаваемого объекта.
+
+Возвращаемое значение
+Type: System.Object
+Ссылка на вновь созданный объект.
+
+Исключения
+ArgumentNullException	Свойство type имеет значение null.
+ArgumentException	type не является объектом RuntimeType.
+					-или-
+					type имеет открытый универсальный тип (то есть, ContainsGenericParameters возвращает true).
+NotSupportedException	type не может быть TypeBuilder.
+						-или-
+						Создание TypedReference, ArgIterator, Void, и RuntimeArgumentHandle типы или массивы этих типов не поддерживается.
+						-или-
+						Сборка, содержащая type является динамической сборки, который был создан с AssemblyBuilderAccess.Save.
+TargetInvocationException	Вызываемый конструктор создает исключение.
+MethodAccessException	Вызывающий объект не имеет разрешения на вызов этого конструктора.
+MemberAccessException	Невозможно создать экземпляр абстрактного класса, или этот член был вызван при помощи механизма позднего связывания.
+InvalidComObjectException	Тип COM не была получена через GetTypeFromProgID или GetTypeFromCLSID.
+MissingMethodException	В .NET for Windows Store apps или , перехватить исключение базового класса, MissingMemberException, вместо нее. Соответствующий открытый конструктор не найден.
+COMException	type — Это объект COM, но идентификатор класса, используемый для получения типа является недопустимым или идентифицируемый класс не зарегистрирован.
+TypeLoadException	type не является допустимым типом.
+
+Заметки
+Вызываемый конструктор должен быть доступен.
+
+Примечание
+Начиная с .NET Framework 2.0 с пакетом обновления 1 (SP1), этот метод может использоваться для доступа к закрытым типам, если вызывающий объект был предоставлен ReflectionPermission с ReflectionPermissionFlag.RestrictedMemberAccess флаг и, если набор разрешений сборки, содержащей закрытые типы ограничивается набором разрешений вызывающего оператора или его подмножеством.(См. раздел Considerazioni sulla sicurezza in relazione alla reflection).
+Для применения этих функциональных возможностей приложение должно использовать .NET Framework 3,5 или более поздние версии.
+
+Примеры
+В следующем примере кода показано, как вызвать CreateInstance(Type) метод.Экземпляры различных типов создаются и отображаются их значения по умолчанию.
+
+using System;
+
+class DynamicInstanceList
+{
+    private static string instanceSpec = "System.EventArgs;System.Random;" +
+        "System.Exception;System.Object;System.Version";
+
+    public static void Main()
+    {
+        string[] instances = instanceSpec.Split(';');
+        Array instlist = Array.CreateInstance(typeof(object), instances.Length);
+        object item;
+        for (int i = 0; i < instances.Length; i++)
+        {
+            // create the object from the specification string
+            Console.WriteLine("Creating instance of: {0}", instances[i]);
+            item = Activator.CreateInstance(Type.GetType(instances[i]));
+            instlist.SetValue(item, i);
+        }
+        Console.WriteLine("\nObjects and their default values:\n");
+        foreach (object o in instlist)
+        {
+            Console.WriteLine("Type:     {0}\nValue:    {1}\nHashCode: {2}\n",
+                o.GetType().FullName, o.ToString(), o.GetHashCode());
+        }
+    }
+}
+
+// This program will display output similar to the following:
+//
+// Creating instance of: System.EventArgs
+// Creating instance of: System.Random
+// Creating instance of: System.Exception
+// Creating instance of: System.Object
+// Creating instance of: System.Version
+//
+// Objects and their default values:
+//
+// Type:     System.EventArgs
+// Value:    System.EventArgs
+// HashCode: 46104728
+//
+// Type:     System.Random
+// Value:    System.Random
+// HashCode: 12289376
+//
+// Type:     System.Exception
+// Value:    System.Exception: Exception of type 'System.Exception' was thrown.
+// HashCode: 55530882
+//
+// Type:     System.Object
+// Value:    System.Object
+// HashCode: 30015890
+//
+// Type:     System.Version
+// Value:    0.0
+// HashCode: 1048575

@@ -1,0 +1,6 @@
+C:\Users\Задерей.Юрий\source\repos\ConsoleReflection\AssemblyExampleLibrary\bin\Release\AssemblyExampleLibrary.dll
+C:\Users\Задерей.Юрий\source\repos\ConsoleReflection\AssemblyExampleLibrary\bin\Release\AssemblyExampleLibrary.pdb
+C:\Users\Задерей.Юрий\source\repos\ConsoleReflection\AssemblyExampleLibrary\obj\Release\AssemblyExampleLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Задерей.Юрий\source\repos\ConsoleReflection\AssemblyExampleLibrary\obj\Release\AssemblyExampleLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Задерей.Юрий\source\repos\ConsoleReflection\AssemblyExampleLibrary\obj\Release\AssemblyExampleLibrary.dll
+C:\Users\Задерей.Юрий\source\repos\ConsoleReflection\AssemblyExampleLibrary\obj\Release\AssemblyExampleLibrary.pdb

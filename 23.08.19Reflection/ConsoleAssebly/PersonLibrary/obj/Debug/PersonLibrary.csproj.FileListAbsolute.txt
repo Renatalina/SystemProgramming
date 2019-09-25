@@ -1,0 +1,5 @@
+C:\Users\Задерей.Юрий\source\repos\ConsoleAssebly\PersonLibrary\bin\Debug\PersonLibrary.dll
+C:\Users\Задерей.Юрий\source\repos\ConsoleAssebly\PersonLibrary\bin\Debug\PersonLibrary.pdb
+C:\Users\Задерей.Юрий\source\repos\ConsoleAssebly\PersonLibrary\obj\Debug\PersonLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Задерей.Юрий\source\repos\ConsoleAssebly\PersonLibrary\obj\Debug\PersonLibrary.dll
+C:\Users\Задерей.Юрий\source\repos\ConsoleAssebly\PersonLibrary\obj\Debug\PersonLibrary.pdb

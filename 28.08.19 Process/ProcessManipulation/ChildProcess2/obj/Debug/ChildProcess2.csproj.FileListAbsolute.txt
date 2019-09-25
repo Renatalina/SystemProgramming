@@ -1,0 +1,9 @@
+C:\Users\Задерей.Юрий\source\repos\ProcessManipulation\ChildProcess2\bin\Debug\ChildProcess2.exe.config
+C:\Users\Задерей.Юрий\source\repos\ProcessManipulation\ChildProcess2\bin\Debug\ChildProcess2.exe
+C:\Users\Задерей.Юрий\source\repos\ProcessManipulation\ChildProcess2\bin\Debug\ChildProcess2.pdb
+C:\Users\Задерей.Юрий\source\repos\ProcessManipulation\ChildProcess2\obj\Debug\ChildProcess2.Form1.resources
+C:\Users\Задерей.Юрий\source\repos\ProcessManipulation\ChildProcess2\obj\Debug\ChildProcess2.Properties.Resources.resources
+C:\Users\Задерей.Юрий\source\repos\ProcessManipulation\ChildProcess2\obj\Debug\ChildProcess2.csproj.GenerateResource.cache
+C:\Users\Задерей.Юрий\source\repos\ProcessManipulation\ChildProcess2\obj\Debug\ChildProcess2.csproj.CoreCompileInputs.cache
+C:\Users\Задерей.Юрий\source\repos\ProcessManipulation\ChildProcess2\obj\Debug\ChildProcess2.exe
+C:\Users\Задерей.Юрий\source\repos\ProcessManipulation\ChildProcess2\obj\Debug\ChildProcess2.pdb

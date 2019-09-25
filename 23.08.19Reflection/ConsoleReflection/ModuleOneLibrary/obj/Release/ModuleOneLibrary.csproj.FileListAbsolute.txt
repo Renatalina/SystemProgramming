@@ -1,0 +1,9 @@
+C:\Users\Задерей.Юрий\source\repos\ConsoleReflection\ModuleOneLibrary\bin\Release\ModuleOneLibrary.dll
+C:\Users\Задерей.Юрий\source\repos\ConsoleReflection\ModuleOneLibrary\bin\Release\ModuleOneLibrary.pdb
+C:\Users\Задерей.Юрий\source\repos\ConsoleReflection\ModuleOneLibrary\bin\Release\AssemblyExampleLibrary.dll
+C:\Users\Задерей.Юрий\source\repos\ConsoleReflection\ModuleOneLibrary\bin\Release\AssemblyExampleLibrary.pdb
+C:\Users\Задерей.Юрий\source\repos\ConsoleReflection\ModuleOneLibrary\obj\Release\ModuleOneLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Задерей.Юрий\source\repos\ConsoleReflection\ModuleOneLibrary\obj\Release\ModuleOneLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Задерей.Юрий\source\repos\ConsoleReflection\ModuleOneLibrary\obj\Release\ModuleOneLibrary.csproj.CopyComplete
+C:\Users\Задерей.Юрий\source\repos\ConsoleReflection\ModuleOneLibrary\obj\Release\ModuleOneLibrary.dll
+C:\Users\Задерей.Юрий\source\repos\ConsoleReflection\ModuleOneLibrary\obj\Release\ModuleOneLibrary.pdb

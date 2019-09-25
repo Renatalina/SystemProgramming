@@ -1,0 +1,5 @@
+c:\users\висковатых.наталия\source\repos\StudentLibrary\StudentLibrary\bin\Release\StudentLibrary.dll
+c:\users\висковатых.наталия\source\repos\StudentLibrary\StudentLibrary\bin\Release\StudentLibrary.pdb
+c:\users\висковатых.наталия\source\repos\StudentLibrary\StudentLibrary\obj\Release\StudentLibrary.csproj.CoreCompileInputs.cache
+c:\users\висковатых.наталия\source\repos\StudentLibrary\StudentLibrary\obj\Release\StudentLibrary.dll
+c:\users\висковатых.наталия\source\repos\StudentLibrary\StudentLibrary\obj\Release\StudentLibrary.pdb

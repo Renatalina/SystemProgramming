@@ -1,0 +1,106 @@
+Activator - класс
+ 
+Содержит методы, позволяющие локально или удаленно создавать типы объектов или получать ссылки на существующие удаленные объекты. Этот класс не наследуется.
+Пространство имен:   System
+Сборка:  mscorlib (в mscorlib.dll)
+
+Иерархия наследования
+System.Object
+  System.Activator
+
+Синтаксис
+[ClassInterfaceAttribute(ClassInterfaceType.None)]
+[ComVisibleAttribute(true)]
+public sealed class Activator : _Activator
+
+Методы
+ static	CreateComInstanceFrom(String, String)	Создает экземпляр COM-объекта с заданным именем, используя для этого файл именованной сборки и конструктор по умолчанию.
+ static	CreateComInstanceFrom(String, String, Byte[], AssemblyHashAlgorithm) Создает экземпляр COM-объекта с заданным именем, используя для этого файл именованной сборки и конструктор по умолчанию.
+ static	CreateInstance(ActivationContext)	Создает экземпляр типа, назначенного указанным объектом ActivationContext.
+ static	CreateInstance(ActivationContext, String[])	Создает экземпляр типа, назначенного указанным объектом ActivationContext и активированного с помощью указанных пользовательских данных активации.
+ static	CreateInstance(AppDomain, String, String)	Создает экземпляр типа с заданным именем в указанном удаленном домене, используя для этого именованную сборку и конструктор по умолчанию.
+ static	CreateInstance(AppDomain, String, String, Boolean, BindingFlags, Binder, Object[], CultureInfo, Object[])	Создает экземпляр типа с заданным именем в указанном удаленном домене, используя для этого именованную сборку и конструктор, который наилучшим образом соответствует заданным параметрам.
+ static	CreateInstance(AppDomain, String, String, Boolean, BindingFlags, Binder, Object[], CultureInfo, Object[], Evidence)	Устарело.Создает экземпляр типа с заданным именем в указанном удаленном домене, используя для этого именованную сборку и конструктор, который наилучшим образом соответствует заданным параметрам.
+ static	CreateInstance(String, String)	Создает экземпляр типа с заданным именем, используя для этого именованную сборку и конструктор по умолчанию.
+ static	CreateInstance(String, String, Boolean, BindingFlags, Binder, Object[], CultureInfo, Object[])	Создает экземпляр типа с заданным именем, используя для этого именованную сборку и конструктор, который наилучшим образом соответствует заданным параметрам.
+ static	CreateInstance(String, String, Boolean, BindingFlags, Binder, Object[], CultureInfo, Object[], Evidence)	Устарело.Создает экземпляр типа с заданным именем, используя для этого именованную сборку и конструктор, который наилучшим образом соответствует заданным параметрам.
+ static	CreateInstance(String, String, Object[])	Создает экземпляр типа с заданным именем, используя для этого именованную сборку и конструктор по умолчанию.
+ static	CreateInstance(Type)	Создает экземпляр указанного типа, используя конструктор, заданный для этого типа по умолчанию.
+ static	CreateInstance(Type, BindingFlags, Binder, Object[], CultureInfo)	Создает экземпляр указанного типа, используя конструктор, соответствующий заданным параметрам.
+ static	CreateInstance(Type, BindingFlags, Binder, Object[], CultureInfo, Object[])	Создает экземпляр указанного типа, используя конструктор, соответствующий заданным параметрам.
+ static	CreateInstance(Type, Boolean)	Создает экземпляр указанного типа, используя конструктор, заданный для этого типа по умолчанию.
+ static	CreateInstance(Type, Object[])	Создает экземпляр указанного типа, используя конструктор, соответствующий заданным параметрам.
+ static	CreateInstance(Type, Object[], Object[])	Создает экземпляр указанного типа, используя конструктор, соответствующий заданным параметрам.
+ static	CreateInstance<T>()	Создает экземпляр типа, объявленного в указанном параметре универсального типа, с помощью конструктора без параметров.
+ static	CreateInstanceFrom(AppDomain, String, String)	Создает экземпляр типа с заданным именем в указанном удаленном домене, используя для этого файл именованной сборки и конструктор по умолчанию.
+ static	CreateInstanceFrom(AppDomain, String, String, Boolean, BindingFlags, Binder, Object[], CultureInfo, Object[])	Создает экземпляр типа с заданным именем в указанном удаленном домене, используя для этого файл именованной сборки и конструктор, который наилучшим образом соответствует заданным параметрам.
+ static	CreateInstanceFrom(AppDomain, String, String, Boolean, BindingFlags, Binder, Object[], CultureInfo, Object[], Evidence)	Устарело.Создает экземпляр типа с заданным именем в указанном удаленном домене, используя для этого файл именованной сборки и конструктор, который наилучшим образом соответствует заданным параметрам.
+ static	CreateInstanceFrom(String, String)	Создает экземпляр типа с заданным именем, используя для этого файл именованной сборки и конструктор по умолчанию.
+ static	CreateInstanceFrom(String, String, Boolean, BindingFlags, Binder, Object[], CultureInfo, Object[])	Создает экземпляр типа с заданным именем, используя для этого файл именованной сборки и конструктор, который наилучшим образом соответствует заданным параметрам.
+ static	CreateInstanceFrom(String, String, Boolean, BindingFlags, Binder, Object[], CultureInfo, Object[], Evidence)	Устарело.Создает экземпляр типа с заданным именем, используя для этого файл именованной сборки и конструктор, который наилучшим образом соответствует заданным параметрам.
+ static	CreateInstanceFrom(String, String, Object[])	Создает экземпляр типа с заданным именем, используя для этого файл именованной сборки и конструктор по умолчанию.
+ Equals(Object)	Определяет, равен ли заданный объект текущему объекту.(Наследуется от Object.)
+ GetHashCode()	Служит хэш-функцией по умолчанию.(Наследуется от Object.)
+ static	GetObject(Type, String)	Создает прокси для хорошо известного объекта, определенного заданным типом и URL.
+ static	GetObject(Type, String, Object)	Создает прокси для хорошо известного объекта, который идентифицируется по заданному типу, URL и данным канала.
+ GetType()	Возвращает объект Type для текущего экземпляра.(Наследуется от Object.)
+ ToString()	Возвращает строковое представление текущего объекта.(Наследуется от Object.)
+
+ Явные реализации интерфейса
+ _Activator.GetIDsOfNames(Guid, IntPtr, UInt32, UInt32, IntPtr)	Сопоставляет набор имен соответствующему набору идентификаторов диспетчеризации.
+ _Activator.GetTypeInfo(UInt32, UInt32, IntPtr)	Возвращает сведения о типе объекта, которые затем могут использоваться для получения сведений о типе интерфейса.
+ _Activator.GetTypeInfoCount(UInt32)	Возвращает количество предоставляемых объектом интерфейсов для доступа к сведениям о типе (0 или 1).
+ _Activator.Invoke(UInt32, Guid, UInt32, Int16, IntPtr, IntPtr, IntPtr, IntPtr)	Предоставляет доступ к открытым свойствам и методам объекта.
+
+ Заметки
+CreateInstance Метод создает экземпляр типа, определенного в сборке путем вызова конструктора, который наилучшим образом соответствует указанным аргументам. Если не заданы аргументы, вызывается конструктор, который не принимает параметров, то есть конструктор по умолчанию.
+Необходимо обладать достаточными полномочиями для поиска и вызова конструктора; в противном случае — исключение. По умолчанию только открытые конструкторы считаются во время поиска для конструктора. Если нет конструкторов или конструктор по умолчанию не найден, выдается исключение.
+Параметр привязки определяет объект, который выполняет поиск подходящего конструктора сборки. Можно указать собственные связывателя и критериев поиска. Если связыватель не задан, используется связыватель по умолчанию. Дополнительные сведения см. в описаниях классов System.Reflection.Binder и System.Reflection.BindingFlags.
+Параметр свидетельства влияет на политику безопасности и разрешения для конструктора. Дополнительные сведения см. в описании класса System.Security.Policy.Evidence.
+На локальном или удаленном сайте можно создать экземпляр типа. Если тип создается, параметр атрибута активации задает URI удаленного сайта. Вызова для создания экземпляра может проходить через промежуточные веб-узлы, прежде чем оно достигнет удаленного сайта. Другие атрибуты активации можно изменить среду или контекст, в котором функционирует вызов на удаленном и промежуточных веб-узлах.
+Если экземпляр создан на локальном узле, возвращается ссылка на этот объект. Если экземпляр создан на удаленном узле, возвращается ссылка на прокси. Удаленный объект управляется через прокси, как если бы это был локальный объект.
+GetObject Метод создает прокси для запущенного удаленного объекта, активируемого сервером хорошо известного объекта или веб-службы XML. Можно указать носитель соединения, то есть канал. Дополнительные сведения см. в описании класса System.Runtime.Remoting.Channels.ChannelServices.
+Сборки содержат определения типов. CreateInstance Метод создает экземпляр типа из запущенной сборки. CreateInstanceFrom Метод создает экземпляр из файла, содержащего сборку. CreateComInstanceFrom Метод создает экземпляр COM-объекта из файла, содержащего сборку.
+
+Примеры
+В следующем примере показано, как использовать Activator класса для динамического создания объектов во время выполнения.
+
+using System;
+using System.Reflection;
+using System.Text;
+
+public class SomeType
+{
+    public void DoSomething(int x)
+    {
+        Console.WriteLine("100 / {0} = {1}", x, 100 / x);
+    }
+}
+
+public class Example
+{
+    static void Main()
+    {
+        // Create an instance of the StringBuilder type using Activator.CreateInstance.
+        Object o = Activator.CreateInstance(typeof(StringBuilder));
+
+        // Append a string into the StringBuilder object and display the StringBuilder.
+        StringBuilder sb = (StringBuilder) o;
+        sb.Append("Hello, there.");
+        Console.WriteLine(sb);
+
+        // Create an instance of the SomeType class that is defined in this assembly.
+        System.Runtime.Remoting.ObjectHandle oh = Activator.CreateInstanceFrom(Assembly.GetEntryAssembly().CodeBase, typeof(SomeType).FullName);
+
+        // Call an instance method defined by the SomeType type using this object.
+        SomeType st = (SomeType) oh.Unwrap();
+
+        st.DoSomething(5);
+    }
+}
+
+/* This code produces the following output:
+
+Hello, there.
+100 / 5 = 20
+ */

@@ -1,0 +1,10 @@
+C:\Users\Задерей.Юрий\source\repos\ProcessManipulation\ProcessManipulation\bin\Debug\ProcessManipulation.exe.config
+C:\Users\Задерей.Юрий\source\repos\ProcessManipulation\ProcessManipulation\bin\Debug\ProcessManipulation.exe
+C:\Users\Задерей.Юрий\source\repos\ProcessManipulation\ProcessManipulation\bin\Debug\ProcessManipulation.pdb
+C:\Users\Задерей.Юрий\source\repos\ProcessManipulation\ProcessManipulation\obj\Debug\ProcessManipulation.csprojResolveAssemblyReference.cache
+C:\Users\Задерей.Юрий\source\repos\ProcessManipulation\ProcessManipulation\obj\Debug\ProcessManipulation.Form1.resources
+C:\Users\Задерей.Юрий\source\repos\ProcessManipulation\ProcessManipulation\obj\Debug\ProcessManipulation.Properties.Resources.resources
+C:\Users\Задерей.Юрий\source\repos\ProcessManipulation\ProcessManipulation\obj\Debug\ProcessManipulation.csproj.GenerateResource.cache
+C:\Users\Задерей.Юрий\source\repos\ProcessManipulation\ProcessManipulation\obj\Debug\ProcessManipulation.csproj.CoreCompileInputs.cache
+C:\Users\Задерей.Юрий\source\repos\ProcessManipulation\ProcessManipulation\obj\Debug\ProcessManipulation.exe
+C:\Users\Задерей.Юрий\source\repos\ProcessManipulation\ProcessManipulation\obj\Debug\ProcessManipulation.pdb

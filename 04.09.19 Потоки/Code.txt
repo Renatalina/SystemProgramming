@@ -1,0 +1,54 @@
+https://hangouts.google.com/call/WGw-JtAF5Jlq9Lz0uIeoAEEI
+
+
+Реализуйте консольное приложение - игра "успел, не успел" где будет проверяться скорость реакции пользователя. Программа должна подать сигнал пользователю в
+  виде текста, и пользователю должен будет нажать кнопку на клавиатуре, после нажатия пользователь должен увидеть, сколько времени (минуты:секунды:милисекунды)
+  ему потребовалось, чтобы нажать кнопку.
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            ParameterizedThreadStart param = new ParameterizedThreadStart(PressKey);
+            Thread thread = new Thread(param);
+            Random rand = new Random();
+            char ch = (char)rand.Next(97, 123);
+            Console.WriteLine(ch);
+            thread.Start(ch);
+            thread.Join();
+
+            Console.WriteLine();
+
+            Console.ReadLine();
+        }
+        static void PressKey(object obj)
+        {
+            char ch = (char)obj;
+            DateTime start = DateTime.Now;
+            Console.WriteLine("Enter key");
+            for (;;)
+            {
+
+                if (obj is char)
+                {
+                    ConsoleKeyInfo key = Console.ReadKey();
+
+                    if (key.KeyChar == ch)
+                    {
+                        DateTime finish = DateTime.Now;
+                        Console.Write("\n" + (finish-start).Minutes);
+                        Console.Write(" : " + (finish-start).Seconds);
+                        Console.WriteLine(" : " + (finish-start).Milliseconds);
+
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("\nNo!");
+                    }
+                }
+            }
+        }
+    }
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

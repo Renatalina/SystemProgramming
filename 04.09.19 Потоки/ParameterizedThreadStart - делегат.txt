@@ -1,0 +1,64 @@
+ParameterizedThreadStart - делегат
+
+Представляет метод, выполняющийся в объекте Thread.
+
+Пространство имен:   System.Threading
+Сборка:  mscorlib (в mscorlib.dll)
+
+Синтаксис
+
+[ComVisibleAttribute(false)]
+public delegate void ParameterizedThreadStart(
+	object obj
+)
+Параметры
+obj	Объект, содержащий данные потоковой процедуры.
+
+Заметки
+При создании управляемого потока, выполняемый в потоке метод представлен делегатом ThreadStart или делегатом ParameterizedThreadStart, передаваемым конструктору Thread.Поток не начинает выполняться до вызова метода Thread.Start.В потоке вызывается делегат ThreadStart или ParameterizedThreadStart и начинается выполнение с первой строки метода, представленного делегатом.В случае использования делегата ParameterizedThreadStart объект, передаваемый методу Start(Object) передается делегату.
+
+Примечание
+Пользователи Visual Basic и C# могут опускать конструктор делегата ThreadStart или ParameterizedThreadStart при создании потока.В Visual Basic используйте оператор AddressOf при передаче метода конструктору Thread, например: Dim t As New Thread(AddressOf ThreadProc).В C# просто задайте имя потоковой процедуры.Компилятор выберет необходимый конструктор делегата.
+
+Примечание
+При создании делегата ParameterizedThreadStart для метода экземпляра в C++ первым параметром конструктора является переменная экземпляра.Для статического метода первый параметр конструктора — ноль.Для статического метода требуется только один параметр конструктора делегата: адрес метода обратного вызова, указанного именем класса.
+Данные в потоковую процедуру легко передать с помощью делегата ParameterizedThreadStart и перегрузки метода Thread.Start(Object), но этот способ не обеспечивает безопасность типов, поскольку в метод Thread.Start(Object) можно передать любой объект.Более надежным способом передачи данных в потоковую процедуру является помещение процедуры потока и полей данных в рабочий объект.Для получения дополнительной информации см. Создание потоков и передача данных во время запуска.
+
+Примеры
+В следующем примере кода показан синтаксис для создания и использования делегата ParameterizedThreadStart со статическим методом и методом экземпляра.
+
+Примечание
+Компиляторы Visual Basic и C# выводят делегат ParameterizedThreadStart из сигнатур методов DoWork и DoMoreWork и вызывают соответствующий конструктор.Таким образом, явного вызова конструктора в коде нет.
+
+using System;
+using System.Threading;
+
+public class Work
+{
+    public static void Main()
+    {
+        // Start a thread that calls a parameterized static method.
+        Thread newThread = new Thread(Work.DoWork);
+        newThread.Start(42);
+
+        // Start a thread that calls a parameterized instance method.
+        Work w = new Work();
+        newThread = new Thread(w.DoMoreWork);
+        newThread.Start("The answer.");
+    }
+
+    public static void DoWork(object data)
+    {
+        Console.WriteLine("Static thread procedure. Data='{0}'",
+            data);
+    }
+
+    public void DoMoreWork(object data)
+    {
+        Console.WriteLine("Instance thread procedure. Data='{0}'",
+            data);
+    }
+}
+// This example displays output like the following:
+//       Static thread procedure. Data='42'
+//       Instance thread procedure. Data='The answer.'

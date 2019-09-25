@@ -1,0 +1,41 @@
+https://hangouts.google.com/call/eSUYtmsabunyuBF1xlhxAEEI
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+            Assembly assembly = Assembly.Load("PersonLibrary");
+
+            Console.WriteLine("\n--------\n");
+
+            foreach (Type item in assembly.GetTypes())
+            {
+                Console.WriteLine(item.Name);
+            }
+
+            Console.WriteLine("\n--------\n");
+
+            Type type = assembly.GetType("PersonLibrary.Person");
+
+            object obj = Activator.CreateInstance(type);
+
+            Console.WriteLine("\n--------\n");
+
+            foreach (MethodInfo item in type.GetMethods())
+            {
+                Console.WriteLine(item.Name);
+            }
+
+            Console.WriteLine("\n--------\n");
+
+            MethodInfo method = type.GetMethod("ToString");
+
+            Console.WriteLine(method.Invoke(obj, null));
+
+            Console.WriteLine("\n--------\n");
+
+            method = type.GetMethod("Summ");
+
+            Console.WriteLine(method.Invoke(obj, new object[] { 34, 12 }));
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

@@ -1,0 +1,58 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading;
+
+namespace ConsoleBank.model {
+
+    class Bank {
+
+        private readonly Object obj = new object();
+
+        private double money;
+        public double Money {
+
+            get { return money; }
+
+            set {
+                this.money = Convert.ToDouble( value );
+                write_to_file( "money", money.ToString() );
+            }
+        }
+
+        private string name;
+        public string Name {
+
+            get { return name; }
+
+            set {
+                name = value;
+                write_to_file( "name", name);
+            }
+        }
+
+        private int percent;
+        public int Percent {
+
+            get { return percent; }
+
+            set {
+                percent = Convert.ToInt32( value );
+                write_to_file( "percent", Percent.ToString() );
+            }
+        }
+
+        private void write_to_file( string property, string val ) {
+
+            lock( this.obj ) {
+
+                StreamWriter stream = new StreamWriter( "log.txt", true );
+                
+                stream.WriteLine( $"{ property }: { val }" );
+                stream.Close();
+            }
+        }
+    }
+}

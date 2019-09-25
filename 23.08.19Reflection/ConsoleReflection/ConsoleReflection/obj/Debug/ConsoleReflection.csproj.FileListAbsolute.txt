@@ -1,0 +1,10 @@
+C:\Users\Задерей.Юрий\source\repos\ConsoleReflection\ConsoleReflection\bin\Debug\ConsoleReflection.exe.config
+C:\Users\Задерей.Юрий\source\repos\ConsoleReflection\ConsoleReflection\bin\Debug\ConsoleReflection.exe
+C:\Users\Задерей.Юрий\source\repos\ConsoleReflection\ConsoleReflection\bin\Debug\ConsoleReflection.pdb
+C:\Users\Задерей.Юрий\source\repos\ConsoleReflection\ConsoleReflection\bin\Debug\AssemblyExampleLibrary.dll
+C:\Users\Задерей.Юрий\source\repos\ConsoleReflection\ConsoleReflection\bin\Debug\AssemblyExampleLibrary.pdb
+C:\Users\Задерей.Юрий\source\repos\ConsoleReflection\ConsoleReflection\obj\Debug\ConsoleReflection.csprojResolveAssemblyReference.cache
+C:\Users\Задерей.Юрий\source\repos\ConsoleReflection\ConsoleReflection\obj\Debug\ConsoleReflection.csproj.CoreCompileInputs.cache
+C:\Users\Задерей.Юрий\source\repos\ConsoleReflection\ConsoleReflection\obj\Debug\ConsoleReflection.csproj.CopyComplete
+C:\Users\Задерей.Юрий\source\repos\ConsoleReflection\ConsoleReflection\obj\Debug\ConsoleReflection.exe
+C:\Users\Задерей.Юрий\source\repos\ConsoleReflection\ConsoleReflection\obj\Debug\ConsoleReflection.pdb

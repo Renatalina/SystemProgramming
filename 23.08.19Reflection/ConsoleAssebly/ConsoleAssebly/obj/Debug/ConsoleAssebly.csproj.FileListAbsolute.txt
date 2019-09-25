@@ -1,0 +1,7 @@
+C:\Users\Задерей.Юрий\source\repos\ConsoleAssebly\ConsoleAssebly\bin\Debug\ConsoleAssebly.exe.config
+C:\Users\Задерей.Юрий\source\repos\ConsoleAssebly\ConsoleAssebly\bin\Debug\ConsoleAssebly.exe
+C:\Users\Задерей.Юрий\source\repos\ConsoleAssebly\ConsoleAssebly\bin\Debug\ConsoleAssebly.pdb
+C:\Users\Задерей.Юрий\source\repos\ConsoleAssebly\ConsoleAssebly\obj\Debug\ConsoleAssebly.csprojResolveAssemblyReference.cache
+C:\Users\Задерей.Юрий\source\repos\ConsoleAssebly\ConsoleAssebly\obj\Debug\ConsoleAssebly.csproj.CoreCompileInputs.cache
+C:\Users\Задерей.Юрий\source\repos\ConsoleAssebly\ConsoleAssebly\obj\Debug\ConsoleAssebly.exe
+C:\Users\Задерей.Юрий\source\repos\ConsoleAssebly\ConsoleAssebly\obj\Debug\ConsoleAssebly.pdb

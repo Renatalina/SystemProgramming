@@ -1,0 +1,4 @@
+﻿  main.cpp
+     Creating library c:\users\висковатых.наталия\source\repos\SimpleCulc_C++\Debug\SimpleCulc_C++.lib and object c:\users\висковатых.наталия\source\repos\SimpleCulc_C++\Debug\SimpleCulc_C++.exp
+SimpleCulc_C++.exp : warning LNK4070: /OUT:SimpleDll.dll directive in .EXP differs from output filename 'c:\users\висковатых.наталия\source\repos\SimpleCulc_C++\Debug\SimpleCulc_C++.dll'; ignoring directive
+  SimpleCulc_C++.vcxproj -> c:\users\висковатых.наталия\source\repos\SimpleCulc_C++\Debug\SimpleCulc_C++.dll
